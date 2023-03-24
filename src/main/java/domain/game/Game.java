@@ -10,7 +10,6 @@ import domain.player.ImmutablePlayer;
 import domain.player.Player;
 import domain.player.PlayerRoundIterator;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
