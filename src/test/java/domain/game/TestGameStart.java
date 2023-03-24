@@ -59,7 +59,8 @@ class TestGameStart {
 
     @Test
     void GivenOnlyOneCard_WhenWildDrawFourCardPlayed_ShouldThrowError() {
-        assertThrows(IllegalStateException.class, () -> createGame(CardTestFactory.createWildDrawFourCard()));
+        Card c = CardTestFactory.createWildDrawFourCard();
+        assertThrows(IllegalStateException.class, () -> createGame(c));
     }
 
     @Test
