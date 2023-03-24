@@ -40,16 +40,18 @@ test {
 jacocoTestReport {
   reports {
     xml.enabled true
-    //xml.destination file("${buildDir}/jacocoXml")
-    //csv.enabled false
-    //html.enabled false
+    xml.destination file("${buildDir}/jacocoXml")
+    csv.enabled false
+    html.enabled false
   }
 }
 
 sonarqube {
   properties {
-    property "sonar.projectKey", "tk-codes_uno"
-    property "sonar.organization", "tk-codes-github"
+    //property "sonar.projectKey", "tk-codes_uno"
+    property "sonar.projectKey", "STAR-Uno_STAR-group1-uno"
+    //property "sonar.organization", "tk-codes-github"
+    property "sonar.organization", "star-uno"
     property "sonar.host.url", "https://sonarcloud.io"
     property "sonar.coverage.exclusions", "**/ui/**/*"
   }
