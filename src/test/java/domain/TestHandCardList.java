@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestHandCardList {
+class TestHandCardList {
     @Test
-    public void GivenSameNumberCard_ShouldExist() {
+    void GivenSameNumberCard_ShouldExist() {
         var numberCard = CardTestFactory.createNumberCard(1, CardColor.YELLOW);
         var sameNumberCard = CardTestFactory.createNumberCard(1, CardColor.YELLOW);
 
@@ -23,7 +23,7 @@ public class TestHandCardList {
     }
 
     @Test
-    public void GivenDifferentNumberCard_ShouldNotExist() {
+    void GivenDifferentNumberCard_ShouldNotExist() {
         var numberCard = CardTestFactory.createNumberCard(1, CardColor.YELLOW);
         var anotherNumberCard = CardTestFactory.createNumberCard(2, CardColor.YELLOW);
 
