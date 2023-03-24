@@ -10,17 +10,14 @@ import domain.player.ImmutablePlayer;
 import domain.player.Player;
 import domain.player.PlayerRoundIterator;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Game extends Entity {
     private final PlayerRoundIterator players;
 
     private DrawPile drawPile;
-    private final Stack<Card> discardPile = new Stack<>();
+    private final Deque<Card> discardPile = new ArrayDeque<>();
 
     private ImmutablePlayer winner = null;
 
