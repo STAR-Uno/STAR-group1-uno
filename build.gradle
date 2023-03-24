@@ -1,12 +1,14 @@
 plugins {
   id 'java'
-  id "org.sonarqube" version "3.0"
+  id 'org.sonarqube' version '4.0.0.2929'
   id 'jacoco'
   id 'application'
 }
 
 group 'tkcodes'
 version '2.0'
+
+apply plugin: "jacoco"
 
 repositories {
   mavenCentral()
@@ -28,27 +30,28 @@ application {
   mainClassName = 'UnoApp'
 }
 
+jacoco {
+  toolVersion = "0.8.8"
+}
+
 test {
   useJUnitPlatform()
-
-  jacoco {
-    enabled = System.getenv("CI") == "true"
+  finalizedBy jacocoTestReport
+  jacoco{
+    destinationFile = layout.buildDirectory.file('jacoco/jacocoTest.exec').get().asFile
   }
 }
 
 jacocoTestReport {
   reports {
-    xml.enabled true
-    xml.destination file("${buildDir}/jacocoXml")
-    csv.enabled false
-    html.enabled false
+    xml.required = true
   }
 }
 
 sonarqube {
   properties {
-    property "sonar.projectKey", "tk-codes_uno"
-    property "sonar.organization", "tk-codes-github"
+    property "sonar.projectKey", "STAR-Uno_STAR-group1-uno"
+    property "sonar.organization", "star-uno"
     property "sonar.host.url", "https://sonarcloud.io"
     property "sonar.coverage.exclusions", "**/ui/**/*"
   }
