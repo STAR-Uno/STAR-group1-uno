@@ -1,6 +1,8 @@
 # UNO - Card Game
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=coverage)](https://sonarcloud.io/project/overview?id=STAR-Uno_STAR-group1-uno)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=sqale_rating)](https://sonarcloud.io/project/overview?id=STAR-Uno_STAR-group1-uno)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=coverage)](https://sonarcloud.io/summary/new_code?id=STAR-Uno_STAR-group1-uno)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=STAR-Uno_STAR-group1-uno)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=STAR-Uno_STAR-group1-uno)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=STAR-Uno_STAR-group1-uno&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=STAR-Uno_STAR-group1-uno)
 
 > v2.0: Rebuilt the core game logic in domain-driven-design.
 
