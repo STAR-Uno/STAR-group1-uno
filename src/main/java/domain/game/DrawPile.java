@@ -14,7 +14,7 @@ public class DrawPile {
     }
 
     public Card drawCard() {
-        return cards.pop();
+        return cards.removeLast();
     }
 
     public int getSize() {

@@ -232,7 +232,7 @@ public class Game extends Entity {
     }
 
     private void discard(Card card) {
-        discardPile.add(card);
+        discardPile.addFirst(card);
     }
 
     private void reverse() {
