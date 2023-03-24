@@ -10,13 +10,14 @@ import domain.player.ImmutablePlayer;
 import domain.player.Player;
 import domain.player.PlayerRoundIterator;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 import java.util.UUID;
 import java.util.stream.Stream;
 
-public class Game extends Entity {
+public class Game extends Entity implements Serializable {
     private final PlayerRoundIterator players;
 
     private DrawPile drawPile;
