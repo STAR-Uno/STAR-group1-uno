@@ -14,8 +14,8 @@ public class CardView extends JPanel {
     private final Card card;
     private final String value;
 
-    private final int cardWidth = 100;
-    private final int cardHeight = 150;
+    private static final int cardWidth = 100;
+    private static final int cardHeight = 150;
     private static final int margin = 5;
 
     private final Dimension dimension = new Dimension(cardWidth, cardHeight);
