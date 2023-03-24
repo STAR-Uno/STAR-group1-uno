@@ -39,9 +39,7 @@ public class StyleUtil {
             case YELLOW -> {
                 return yellowColor;
             }
-            default -> {
-                throw new IllegalArgumentException("Unsupported card color " + color);
-            }
+            default -> throw new IllegalArgumentException("Unsupported card color " + color);
         }
     }
 
