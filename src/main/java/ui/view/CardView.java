@@ -20,10 +20,10 @@ public class CardView extends JPanel {
 
     private final Dimension dimension = new Dimension(cardWidth, cardHeight);
 
-    private final Border defaultBorder = BorderFactory.createEtchedBorder(WHEN_FOCUSED, Color.white, Color.gray);
-    private final Border focusedBorder = BorderFactory.createEtchedBorder(WHEN_FOCUSED, Color.black, Color.gray);
+    private final transient Border defaultBorder = BorderFactory.createEtchedBorder(WHEN_FOCUSED, Color.white, Color.gray);
+    private final transient Border focusedBorder = BorderFactory.createEtchedBorder(WHEN_FOCUSED, Color.black, Color.gray);
 
-    private final Consumer<Card> handleCardClick;
+    private final transient Consumer<Card> handleCardClick;
 
     public CardView(Card card) {
         this(card, null);

@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 public class GameAppService implements IGameAppService {
     private static final Logger logger = LogManager.getLogger("GameAppService");
 
-    private final Game game;
+    private final transient Game game;
 
     public GameAppService() {
         game = new GameBuilder()

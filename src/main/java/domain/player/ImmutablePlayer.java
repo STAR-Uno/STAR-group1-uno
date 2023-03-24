@@ -7,7 +7,7 @@ import java.util.UUID;
 import java.util.stream.Stream;
 
 public class ImmutablePlayer implements Serializable {
-    private final Player player;
+    private final transient Player player;
 
     public ImmutablePlayer(Player player) {
         this.player = player;

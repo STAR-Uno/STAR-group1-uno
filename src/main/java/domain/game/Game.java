@@ -17,7 +17,7 @@ import java.util.Stack;
 import java.util.UUID;
 import java.util.stream.Stream;
 
-public class Game extends Entity implements Serializable {
+public class Game extends Entity {
     private final PlayerRoundIterator players;
 
     private DrawPile drawPile;
