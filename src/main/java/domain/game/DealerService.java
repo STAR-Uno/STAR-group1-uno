@@ -3,12 +3,15 @@ package domain.game;
 import domain.card.Card;
 import domain.player.HandCardList;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class DealerService {
     public static final int TOTAL_INITIAL_HAND_CARDS = 7;
+
+    static Random rand = new Random();
 
     private DealerService() {
     }
@@ -22,7 +25,7 @@ public class DealerService {
      */
     public static List<Card> shuffle(List<Card> cards) {
         var shuffledCards = new ArrayList<>(cards);
-        var rand = new Random();
+
 
         for (int current = 0; current < shuffledCards.size() - 1; current++) {
             // get a random index for remaining positions, i.e. [i, CARDS_SIZE - 1)
