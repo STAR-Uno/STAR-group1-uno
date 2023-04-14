@@ -6,12 +6,11 @@ import domain.player.HandCardList;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class DealerService {
     public static final int TOTAL_INITIAL_HAND_CARDS = 7;
 
-    static Random rand = new Random();
+    static SecureRandom rand = new SecureRandom();
 
     private DealerService() {
     }
